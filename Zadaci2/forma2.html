@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Domaci - Forma 2</title>
+    </head>
+    <body>
+        <form>
+        <h2>Software Order Form</h2>
+            <div id="license-detalils">
+                <h4>License details</h3>
+                <ul>
+                    <li>Email adress <input type="email" required placeholder="example@gmail.com"></li>
+                    <li>Website <input type="text" required placeholder="http://www.example.com"></li>
+                    <li>Number of licenses <input type="text" required placeholder="How many to buy (1-10)"></li>
+                </ul>
+            </div>
+            <div id="billing-details">
+                <h4>Billing details</h4>
+                <ul>
+                    <li>Name <input type="text" required placeholder="First Last"></li>
+                    <li>Adress <textarea required placeholder="House number, street, city, state"></textarea></li>
+                    <li>Postal code <input type="text" required placeholder="Post code or zip code"></li>
+                    <li>Country <select>
+                        <option>Australia</option>
+                        <option>USA</option>
+                        <option>Great Britain</option>
+                        <option>Germany</option>
+                        <option>Russia</option>
+                    </select></li>
+                    <li>Phone <i>(optional)</i> <input type="text" placeholder="Include country prefix, e.g."></li>
+                </ul>
+            </div>
+            <div id="payment-details">
+                <h4>Payment details</h4>
+                <ul>
+                    <li>Card number <input type="text" required placeholder="As shown on the front of your"></li>
+                    <li>CVV code <input type="text" required placeholder="3-digit number on back of your"></li>
+                    <li>Expiry date <input type="text" required placeholder="YYYY-MM"></li>
+                </ul>
+            </div>
+            <button type="submit">Place your order</button>
+        </form>
+    </body>
+</html>

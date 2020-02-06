@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Domaci - Forma 1</title>
+    </head>
+    <body>
+        <form>
+            <table border=1>
+                <tr><th colspan="2">Pizza Shop 2.0</th></tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" required maxlength="20"></td>
+                </tr>
+                <tr>
+                    <td>Pizza Topping</td>
+                    <td><input type="radio" name="topping" value="1"> Supreme<br> 
+                        <input type="radio" name="topping" value="2"> Vegetarian<br>
+                        <input type="radio" name="topping" value="3"> Hawaiian
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pizza Sauce</td>
+                    <td>
+                        <select name="sauce">
+                            <option value="1">Tomato</option>
+                            <option value="2">Garlic</option>
+                            <option value="3">Hot Sauce</option>
+                            <option value="4">Mayo</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Optional Extras</td>
+                    <td>
+                        <input type="checkbox"> Extra Cheese
+                        <input type="checkbox"> Gluten Free Base
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Delivery Instructions: <br>
+                        <textarea required max="100" rows="5" cols="50" maxlength="100"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">Send my Order</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
