@@ -1,0 +1,60 @@
+.big-container {
+    width: 500px;
+    height: 300px;
+
+    border-top: 8px dotted yellow;
+    border-left: 8px dashed red;
+    border-bottom: 8px double blue;
+    border-right: 8px solid green;
+}
+
+.big-text {
+    font-size: 33px;
+    text-align: center;
+    text-shadow: 10px 10px 15px black;
+}
+
+.small-container {
+    width: 60%;
+    height: 40%;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 0 4px red, 0 0 0 8px yellow, 0 0 0 12px green, 0 0 0 16px blue;
+}
+
+.small-text {
+    text-align: center;
+    text-shadow: 5px 5px 10px black;
+}
+
+input {
+    background-color: orange;
+    border-top: 2px solid rgb(226, 173, 108);
+    border-left: 2px solid rgb(226, 173, 108);
+    border-right: 2px solid rgb(221, 128, 14);
+    border-bottom: 2px solid rgb(221, 128, 14);
+}
+
+.left-helper {
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    top: 119px;
+    left: 40px;
+    z-index: 1;
+}
+
+.right-helper {
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    top: 119px;
+    right: 190px;
+    z-index: 1;
+}
