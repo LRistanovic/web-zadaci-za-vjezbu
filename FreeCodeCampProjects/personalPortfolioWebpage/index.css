@@ -1,0 +1,177 @@
+body {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    height: 80px;
+    width: 95%;
+    padding-right: 5%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(100, 100, 255);
+    text-align: right;
+    line-height: 80px;
+    overflow: hidden;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    padding: 100px 15px;
+    font-weight: 700;
+}
+
+#navbar a:hover {
+    background-color: coral;
+}
+
+#welcome-section {
+    height: 100vh;
+    background: linear-gradient(60deg, rgb(60, 60, 60), rgb(25, 25, 25));
+}
+
+#welcome-section h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 550;
+    padding-top: 40vh;
+}
+
+#welcome-section h3 {
+    color: rgb(100, 100, 255);
+    text-align: center;
+    font-weight: 500;
+}
+
+#projects {
+    background-color: coral;
+}
+
+#projects #h1 {
+    width: 50%;
+    margin: auto;
+    font-size: 40px;
+    text-align: center;
+    padding: 80px 0 30px;
+    border-bottom: 2px solid black;
+}
+
+#projects #grid {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 5%;
+    justify-items: center;
+}
+
+#projects button {
+    width: 8%;
+    height: 40px;
+    margin: 0 20% 50px;
+    background: rgb(60, 60, 60); 
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+#projects button:hover {
+    background: rgb(25, 25, 25);
+}
+
+.project-tile {
+    background-color: rgb(60, 60, 60);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.project-tile h4 {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 5%;    
+}
+
+.project-tile img {
+    width: 100%;
+    height: auto;
+}
+
+.project-tile h4:before {
+    content: "< ";
+    color: rgb(60, 60, 60);
+    transition: color 0.5s;
+}
+
+.project-tile h4:after {
+    content: " />";
+    color: rgb(60, 60, 60);
+    transition: color 0.5s;
+}
+
+.project-tile h4:hover:before {
+    color: rgb(100, 100, 255);
+}
+
+.project-tile h4:hover:after {
+    color: rgb(100, 100, 255);
+}
+
+footer {
+    height: 70vh;
+    background: linear-gradient(60deg, rgb(60, 60, 60), rgb(25, 25, 25));
+}
+
+footer h1 {
+    margin-top: 0;
+    padding-top: 80px;
+    color: white;
+    text-align: center;
+}
+
+footer h5 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#links {
+    display: flex;
+    orientation: row;
+    justify-content: center;
+}
+
+#links a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    top: 0;
+    transition: top 0.5s;
+}
+
+#links a:hover {
+    top: 30px;
+}
+
+@media (max-width: 900px) {
+    #projects #grid {
+        grid-template-columns: 47% 47%;
+        grid-gap: 6%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #projects #grid {
+        grid-template-columns: 90%;
+    }
+}
